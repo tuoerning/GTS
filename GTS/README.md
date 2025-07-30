@@ -1,10 +1,11 @@
-# DATIS
-This is the implementation repository of paper : Distance-Aware Test Input Selection for Deep Neural Networks
+# GTS
+This is the implementation repository of paper : Test Case Selection via Discrepant Features
+Amplification for Deep Neural Networks
 ## Description
 
-We propose a novel test input selection approach for DNNs, which is called DATIS.
+We propose a novel test input selection approach for DNNs, which is called GTS.
 
-The key design idea of DATIS is two-fold:
+The key design idea of GTS is two-fold:
 
 1. Derive improved uncertainty scores for test inputs by leveraging the training data of DNNs, thus achieving better test input selection.
 2. Eliminate the redundancies among the selected test input sets based on the distances among the selected test inputs to further enhance the effectiveness of test input selection.
@@ -61,26 +62,8 @@ If you want to  run our demo:
 
 ## Nominal Dataset 
 
-**2 image datasets**
-
 - CIFAR-100 (a 100-class ubiquitous object dataset) [1]
 - MNIST (a handwritten digit dataset) [2]
 
-**2 text datasets**
-
-- TREC (a question classification dataset) [3]
-- IMDB (a large movie review dataset for binary sentiment classification) [4]
-
-
-
-
-
-[1] CIFAR http://www.cs.toronto.edu/~kriz/cifar.html
-
-[2] MNIST http://yann.lecun.com/exdb/mnist/
-
-[3] TREC https://cogcomp.seas.upenn.edu/Data/QA/QC/
-
-[4] IMDB http://ai.stanford.edu/~amaas/data/sentiment/
 
 
