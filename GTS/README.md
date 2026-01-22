@@ -1,69 +1,8 @@
 # GTS
 This is the implementation repository of paper : Test Case Selection via Discrepant Features
 Amplification for Deep Neural Networks
-## Description
-
-We propose a novel test input selection approach for DNNs, which is called GTS.
-
-The key design idea of GTS is two-fold:
-
-1. Derive improved uncertainty scores for test inputs by leveraging the training data of DNNs, thus achieving better test input selection.
-2. Eliminate the redundancies among the selected test input sets based on the distances among the selected test inputs to further enhance the effectiveness of test input selection.
-
-## Reproducibility
-
-### Environments
-
-```tx
-tensorflow==2.12.0
-tensorflow-estimator==2.12.0
-Keras==2.12.0
-numpy==1.22.0
-scikit-learn==1.2.2
-tqdm==4.65.0
-datasets=2.12.0
-```
-
-## Structure
-
-```
-├── cluster_data/ "the results of fault estimation in DNNs"
-├── compared approach/ "code of compared test select approaches"
-├── corrupted_data/ "corrupted candidate dataset"
-├── DATIS/ "implementation of DATIS"
-├── model/ "DNNs in our experiments"
-├── results/  "pictures and tables of experimental results"
-├── mnist_test_selection.py "a demo of test selection in mnist"
-├── mnist_dnn_enhancement.py "a demo of dnn enhancement in mnist"
-```
-
-## Usage
-
-We prepared a demo for DATIS
-
-- `python mnist_test_selection.py`
-- `python mnist_dnn_enhancement.py`
-
-If you want to  run our demo:
-
-1.  download the `corrupted_data` and `model` files by following this link: 
-
-   link：   https://1drv.ms/f/s!Are_aZdXk1FyhiQMV7rgp3O-6H7Q
-
-2. experiment
-
-   - `python mnist_test_selection.py`
-
-   ​        a demo for test selection in mnist dataset with LeNet5 model
-
-   - `python mnist_dnn_enhancement.py`
-
-      a demo for dnn enhancement in mnist dataset with LeNet5 model
-
-## Nominal Dataset 
-
-- CIFAR-100 (a 100-class ubiquitous object dataset) [1]
-- MNIST (a handwritten digit dataset) [2]
+This code is implemented with reference to https://github.com/DATIS-24/DATIS
+, and the detailed technical contents are presented in the paper.
 
 
 
